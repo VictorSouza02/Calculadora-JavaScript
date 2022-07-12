@@ -5,3 +5,7 @@
 ## 
  
 No momento apenas a calculadora simples está funcionando (com alguns problemas de sintaxe) logo estarei traduzindo de PY para JS com uma interface web a calculadora de equações de 2º grau.
+
+##
+
+Dentro da pasta "Python 2019" podem ser encontrados os arquivos originais de 2019 que criei, até mesmo o nome dos arquivos são da época😅
