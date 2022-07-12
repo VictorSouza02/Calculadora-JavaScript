@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div id="container">
+
+            <div id="calculadora">
+                <h1>Calculadora</h1>
+                <div id="tela">
+                    <p id="resultado"></p>
+                </div>
+                
+                <table>
+                    <tr>
+                        <td><button  id="b1" class="botao" onclick="limpar()"> AC </button></td>
+                        <td><button class="botao ba" onclick="apagar()"> DEL </button></td>
+                        <td><button class="botao bd" onclick="inserir('/')"> / </button></td>
+                        <td><button class="botao bx" onclick="inserir('*')"> X </button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="botao b7" onclick="inserir('7')"> 7 </button></td>
+                        <td><button class="botao b8" onclick="inserir('8')"> 8 </button></td>
+                        <td><button class="botao b9" onclick="inserir('9')"> 9 </button></td>
+                        <td><button class="botao b-" onclick="inserir('-')"> - </button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="botao b4" onclick="inserir('4')"> 4 </button></td>
+                        <td><button class="botao b5" onclick="inserir('5')"> 5 </button></td>
+                        <td><button class="botao b6" onclick="inserir('6')"> 6 </button></td>
+                        <td><button class="botao b+" onclick="inserir('+')"> + </button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="botao b1" onclick="inserir('1')"> 1 </button></td>
+                        <td><button class="botao b2" onclick="inserir('2')"> 2 </button></td>
+                        <td><button class="botao b3" onclick="inserir('3')"> 3 </button></td>
+                        <td rowspan="2"><button class="botao botaoigual bi" onclick="calcular()"> = </button></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button class="botao botaozero b0" onclick="inserir('0')"> 0 </button></td>
+                        <td><button class="botao b." onclick="inserir('.')"> . </button></td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+
+        <!-- Profile -->
+        <div id="profile">
+            <div id="profile-background"></div>
+            <img class="profile-pic" src="https://github.com/VictorSouza02/Animated-Profile-Card-UI/blob/main/img/profile-pic.jpg?raw=true">
+            <h1>Víctor Souza</h1>
+    
+            <div id="profile-info">
+                <p>"front-end Student"</p>
+            </div>
+    
+            <div id="social-medias">
+                <a href="https://www.instagram.com/victorsouza.png/"><img src="https://github.com/VictorSouza02/Animated-Profile-Card-UI/blob/main/img/instagram-logo.png?raw=true">Instagram</a>
+                <a href="https://www.linkedin.com/in/victorsouza02/"><img src="https://github.com/VictorSouza02/Animated-Profile-Card-UI/blob/main/img/github-logo.png?raw=true">Linkedin</a>
+                <a href="https://github.com/VictorSouza02"><img src="https://github.com/VictorSouza02/Animated-Profile-Card-UI/blob/main/img/linkedin-logo.png?raw=true">GitHub</a>
+            </div>
+            </div>
+        </div>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

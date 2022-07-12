@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(45deg, #c5bb94, #94B49F);
+    background-repeat: no-repeat;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Calculadora*/
+
+#calculadora{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding-top: 25px;
+    background-color: #DF7861;
+    border: 1px solid black;
+    width: 310px;
+    height: 580px;
+    border-radius: 15px;
+    box-shadow: black 1px 1px 5px;
+    margin-bottom: 5em;
+}
+
+#calculadora h1{
+    color: white;
+    font-size: 2em;
+    text-shadow: #3e614a 3px 3px 2px;
+}
+
+#tela{
+    border: 1px solid black;
+    line-height: 80px;
+    padding-right: 5px;
+    width: 298px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: #94B49F;
+    color: white;
+    box-shadow: black 1px 1px 3px;
+}
+
+#resultado{
+    text-align: end;
+    font-size: 2.5em;
+    text-shadow: #3e614a 3px 3px 2px;
+}
+
+
+.botao{
+    margin: 2px;
+    width: 70px;
+    height: 70px;
+    font-size: 2.3em;
+    background-color: #ECB390;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid black;
+    color: #94B49F;
+    text-shadow: #3e614a 1px 1px 2px;
+    box-shadow: black 1px 1px 3px;
+}
+
+.botaoigual{
+    height: 146px;
+}
+
+.botaozero{
+    width: 146px;
+}
+
+.botao:hover{
+    background-color: rgba(236, 179, 144, 0.7);
+}
+
+/* Profile */
+#profile{
+    margin-top: 25px;
+    box-shadow: black 1px 1px 5px;
+    width: 300px;
+    height: 200px;
+    box-sizing: border-box;
+    background: #E9EFC0;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.4s;
+    border: 2px solid #161A26;
+    font-family: "Courier New";
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+#profile-background{
+    opacity: 0.6;
+    z-index: 1;
+    border-radius: 13px 13px;
+    width: 296px;
+    height: 202px;
+    position: absolute;
+    background: #83BD75;
+    clip-path: polygon(0 0, 25% 0, 75% 0, 84% 0, 94% 0, 100% 0, 100% 59%, 100% 76%, 93% 45%, 74% 24%, 52% 9%, 19% 15%);
+}
+
+#profile:hover{
+    width: 300px;
+    height: 320px;
+    transition: 0.4s;
+}
+
+.profile-pic{
+    z-index: 2;
+    margin: 15px auto 0 auto;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    border: 2px solid #161A26;
+    box-shadow: 1px 1px 5px #83BD75;
+}
+
+#profile h1{
+    margin-top: 20px;
+    color: #161A26;
+    text-align: center;
+    line-height: 10px;
+    font-size: 1.5em;
+    text-shadow: 2px 2px 1px #B4E197;
+    height: 20px;
+    margin-bottom: 5px;
+}
+
+#profile-info{
+    margin-top: 5px;
+    width: 300px;
+    height: 22px;
+    overflow: hidden;
+    line-height: 22px;
+    font-weight: bold;
+    color: #494b52;
+    text-shadow: 1px 1px 1px #B4E197;
+}
+
+#social-medias{
+    width: 280px;
+    height: 85px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 5px auto;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+#social-medias a{
+    margin-top: 6px;
+    width: 120px;
+    height: 34px;
+    line-height: 34px;
+    text-decoration: none;
+    font-weight:bold;
+    text-shadow: 2px 2px #B4E197;
+    color: #161A26;
+    border: 2px solid #161A26;
+    background: #E9EFC0;
+    border-radius: 5px;
+    box-shadow: 2px 2px 1px #B4E197;
+    overflow: hidden;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#social-medias a:hover{
+    border: 2px solid #4E944F;
+    box-shadow: 2px 2px 1px #161A26;
+    transition: 0.4s;
+}
+
+#social-medias a img{
+    width: 14px;
+    height: 14px;
+}
+
+/*Paleta*/
+
+color1{color: #FCF8E8;}
+color2{color: #94B49F;}
+color3{color: #ECB390;}
+color4{color: #DF7861;}
+
+/* Responsividade */
+
+@media screen and (min-width: 768px) and (min-height: 600px) {
+
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #container{
+        width: 30%;
+        height: 65%;
+        max-width: 600px;
+        min-width: 350px;
+        min-height: 600px;
+        border-radius: 15px;
+        border: 1px solid black;
+        box-shadow: black 1px 1px 5px;
+        background-color: #7ea08a;
+        display: flex;
+        justify-content: center;
+    }
+
+    #calculadora{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media screen and (min-width: 1144px) {
+    #container{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        align-items: center;
+    }
+
+    #profile{
+        position: absolute;
+        left: 20%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    } 
+}
